@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        
+        <meta charset= "UTF-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1">
+        <title>Contato</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+    </head>
+    
+    <body>
+
+        <div data-role="page" id="primeira" data-theme="b">
+
+            <header data-role="header" data-position="fixed">
+
+                <h1><img src="images/logo.png" width="70%"></h1>
+
+            </header>
+
+            <section data-role="content" data-theme="a">
+
+                <div class="formulario" style="width:90%;">
+                    <form action="contato" method="POST" enctype="application/x-www-form-urlencoded">
+                        
+                        <h4>FALE CONOSCO</h4>
+                        <br/>
+                        <fieldset>
+
+                            <label for="nome">Nome:</label><input type="text" name="nome" id="nome" size="30" required />
+                            
+                            <label for="email">E-mail: </label><input type="email" name="email" id="email" size="30" placeholder="exemplo@gmail.com" required/>
+                            
+                            <labe>Assunto: </labe>
+                            <select name="assunto" id="assunto" required>
+                                <option value=""> -- Selecione -- </option>
+                                <option value="ouvidoria">Ouvidoria</option>
+                                <option value="financeiro">Financeiro</option>
+                                <option value="comercial">Comercial</option>
+                                <option value="duvidas">Dúvidas</option>
+                                <option value="reclamações">Reclamações</option>
+                            </select>
+                            
+                            <label class="label" for="mensagem">Mensagem</label><textarea id="mensagem" name="mensage" placeholder="Digite sua mensagem" rows="10" cols="40">  </textarea>
+                        
+                        </fieldset>
+                        
+                        <button type="submit">Enviar</button>
+                    
+                    </form>
+                </div>
+                <br/>
+                <br/>
+                <center>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <h4>TELEFONES</h4>
+                            <h6>SÃO PAULO E REGIÕES
+                            (11) 4454-2523
+                            </h6>
+                            
+                            <h6>PARA OUTRAS REGIÕES
+                            (11) 95232-5511
+                            </h6>
+                        </div>
+                        <div class="ui-block-b">
+                            <h4>SOCIAL</h4>
+                            <img src="images/fb.png">
+                            <img src="images/yt.png">
+                            <img src="images/tw.png">
+                            <img src="images/it.png">
+                            <img src="images/wa.png">
+                        </div>
+                    </div>
+                </center>
+                <br/>
+            </section>
+
+            <footer data-roler="footer">
+
+                <a href="index.html" data-role="button" data-rel="back">VOLTAR</a>
+                
+                <center>
+                    <small class="ui-bar">
+                        &#64; 2017 TODOS OS DIREITOS RESERVADOS
+                    </small>
+                </center>
+                    
+            </footer>
+        </div>
+
+    </body>
+</html>
+    
